@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Green </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.13.0-web/css/all.css">
+</head>
+<body>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Donate</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+    <section>
+        
+        
+        <header>
+            
+             <a href="#" class="logo"> Greens </a>
+             <div class="toggle closebtn">
+            <a><i class="fa fa-bars" onclick="openNav()"></i> </a>
+                
+             </div>
+            
+        </header>
+        <img src="asset/pexels-pixabay-35196.jpg" alt="" class="bg">
+        <img src="asset/bird.png" alt="" class="bg2">
+    
+        
+        <div class="content">
+            <h2> We can heal the <br> <span>Earth</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aperiam odit autem ut beatae quisquam, adipisci cumque? 
+                Nulla provident officiis rerum nobis vero veritatis ullam
+                 molestiae ipsum,voluptatem velit voluptatibus similique.
+                  Delectus nobis explicabo debitis maiores!</p>
+
+                  <a href="#">Join Us</a>
+        </div>
+
+        <div class="social-icons">
+            <ul class="sci">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <br>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <br>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        
+
+        <div class="textblocks">
+            <div class="block">
+                <h3> Plant a Tree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quod
+                     placeat </p>
+            </div>
+
+            <div class="block">
+                <h3> Think Green</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quod
+                     placeat </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "25%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+    <script>
+        document.addEventListener("mousemove" , function(e) {
+            const bg = document.querySelector('.bg');
+            const bg2 = document.querySelector('.bg2');
+            const content = document.querySelector('.content');
+
+            bg.style.width = 100 + e.pageX/100 + '%';
+            bg.style.height = 100 + e.pageX/100 + '%';
+
+            bg2.style.right = 100 + e.pageX/2 + 'px';
+
+            content.style.left = 150 + e.pageX/2.5 + 'px';
+        
+        })
+    </script>
+</body>
+</html>
